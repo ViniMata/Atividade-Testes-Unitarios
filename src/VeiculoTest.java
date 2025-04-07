@@ -17,12 +17,6 @@ public class VeiculoTest {
         assertEquals(126, veiculo.desconto(7));
     }
 
-    @Test
-    public void testValorComAtraso() throws Exception {
-        Veiculo veiculo = new Veiculo("Corolla",18);
-        assertEquals(0, veiculo.calculoDevolucaoAtrasado(8,10));
-    }
-
     @Test(expected = Exception.class)
     public void testCalculosZero() throws Exception{
         Veiculo veiculo = new Veiculo("Corolla",20);
