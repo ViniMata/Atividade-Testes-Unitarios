@@ -22,16 +22,4 @@ public class Veiculo {
             return calcularCusto(dias);
         }
     }
-
-    public double calculoDevolucaoAtrasado(int diasAtrasado, double valorTotal){
-        double totalComMulta = 0;
-        if (diasAtrasado > 7 && diasAtrasado<=14){
-            totalComMulta *= 1.25;
-        }else if (diasAtrasado > 14 && diasAtrasado > 21){
-            totalComMulta *= 1.50;
-        }else{
-            totalComMulta *= 2;
-        }
-        return totalComMulta;
-    }
 }
